@@ -1,0 +1,37 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form_name">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form_drink">
+    <%= f.label :drink %><br>
+  <%= f.select :drink, options_for_select(["Coffee", "Tea"]) %>
+  </div>
+  <div class="form_sugar">
+    <%= f.label :sugar %><br>
+     <%= f.select :sugar, options_for_select(["0", "1", "2", "3", "4","5 - I hate my teeth"]) %>
+  </div>
+  <div class="form_milk">
+    <%= f.label :milk %><br>
+     <%= f.select :milk, options_for_select(["Yup", "Nope"]) %>
+  </div>
+  <div class="form_strength">
+    <%= f.label :strength %><br>
+      <%= f.select :strength, options_for_select(["Light", "Regular", "Strong", "I needz the caffeine!"]) %>
+  </div>
+ 
+  <%= f.submit 'MAKE MY DRINK!', :class => 'btn btn-success btn-lg' %>
+  <p>
+<% end %>

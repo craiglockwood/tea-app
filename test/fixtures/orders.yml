@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  drink: MyString
+  sugar: MyString
+  milk: MyString
+  strength: MyString
+
+two:
+  name: MyString
+  drink: MyString
+  sugar: MyString
+  milk: MyString
+  strength: MyString

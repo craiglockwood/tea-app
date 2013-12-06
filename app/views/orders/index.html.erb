@@ -1,0 +1,35 @@
+<div class="page-header">
+<h1>Get brewing!</h1>
+</div>
+
+
+
+
+ <% @orders.each do |order| %>
+<div class="status">
+  <div class="name"><strong><%= order.name %></strong></div>
+  <div class="drink">Drink: <%= order.drink %></div>
+  <div class="sugar">Sugar: <%= order.sugar %></div>
+  <div class="milk">Milk: <%= order.milk %></div>
+  <div class="strength">Strength: <%= order.strength %></div>
+
+  <div class="meta">
+    <%= link_to time_ago_in_words(order.created_at) + " ago", order %> | 
+    <span class="admin">
+      <%= link_to "edit", edit_order_path(order) %> | 
+       <%= link_to "delete", order, method: :delete, data: { confirm: "Are you sure?"} %>
+    </span>
+  </div> 
+
+  <hr>
+</div>
+
+
+<% end %>
+
+
+
+
+
+
+
