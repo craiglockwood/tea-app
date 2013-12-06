@@ -8,5 +8,4 @@ Things left to do:
 
 * add foundershub branding
 
-* ...
-
+* add a delete all option to 'view orders' page
