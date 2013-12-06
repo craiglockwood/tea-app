@@ -1,6 +1,6 @@
 == README
 
- A simple Rails app to facilitate tea/coffee making at Foundershub.
+A simple Rails app to facilitate tea/coffee making at Foundershub.
 
 Things left to do:
 
