@@ -6,6 +6,17 @@ Things left to do:
 
 * Add colour picker to choose hex colour of tea strength
 
-* add foundershub branding
+* add login/registration, password recovery etc.
+
+* add function to randomly pick a user to make drink (from orders)
 
 * add a delete all option to 'view orders' page
+
+* prettyfy
+
+
+-------
+
+Long term:
+
+* add admin & groups do a new 'tea round' can be created so that that app can be used on multiple sites (open up for any office to use)
