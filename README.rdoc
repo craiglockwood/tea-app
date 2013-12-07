@@ -19,4 +19,4 @@ Things left to do:
 
 Long term:
 
-* add admin & groups do a new 'tea round' can be created so that that app can be used on multiple sites (open up for any office to use)
+* add admin & groups so a new 'tea round' can be created so that that app can be used on multiple sites (open up for any office to use)
