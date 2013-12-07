@@ -14,9 +14,9 @@
   <div class="strength">Strength: <%= order.strength %></div>
 
   <div class="meta">
-    <%= link_to time_ago_in_words(order.created_at) + " ago", order %> | 
+    <%= link_to time_ago_in_words(order.created_at) + " ago", order %>  
     <span class="admin">
-      <%= link_to "edit", edit_order_path(order) %> | 
+     | <%= link_to "edit", edit_order_path(order) %> | 
        <%= link_to "delete", order, method: :delete, data: { confirm: "Are you sure?"} %>
     </span>
   </div> 
