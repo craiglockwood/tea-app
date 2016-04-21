@@ -2,11 +2,16 @@
 
 A simple Rails app to facilitate tea/coffee making at Foundershub.
 
-Download.
-Nagigate to folder in a terminal.
+Download
+
+Nagigate to folder in a terminal
+
 bundle install
+
 rake db:migrate
-rail s (to start server)
+
+rails s (to start server)
+
 go to http://0.0.0.0:3000/orders/new
 
 
