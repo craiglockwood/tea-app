@@ -31,7 +31,8 @@
     <%= f.label :strength %><br>
       <%= f.select :strength, options_for_select(["Light", "Regular", "Strong", "I needz the caffeine!"]) %>
   </div>
- 
+ <div class="drink_submit">
   <%= f.submit 'MAKE MY DRINK!', :class => 'btn btn-success btn-lg' %>
-  <p>
+  </div>
+  
 <% end %>

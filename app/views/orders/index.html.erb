@@ -18,20 +18,29 @@
   <div class="meta">
     <%= link_to time_ago_in_words(order.created_at) + " ago", order %>  
     <span class="admin">
-     | <%= link_to "edit", edit_order_path(order) %> | 
-       <%= link_to "delete", order, method: :delete, data: { confirm: "Are you sure?"} %>
+     | <%= link_to "edit", edit_order_path(order) %>
+      
     </span>
   </div> 
+
+  <div class="delete_order">
+
+
+
+ <%= button_to "Delete", order, method: :delete,  class: 'btn btn-danger' %>
+
+</div>
+
 
   <hr>
 </div>
 
-<div>
-button to clear orders
-</div>
+
 
 
 <% end %>
+
+
 
 
 
